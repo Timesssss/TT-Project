@@ -1,0 +1,143 @@
+/* SelectClinic.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.clinic-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 10px;
+  padding: 10px;
+  max-height: 500px; /* Adjust this value as needed */
+  overflow-y: auto; /* Vertical scrolling if needed */
+}
+
+.clinic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Make the card take up full width in grid */
+  min-height: 150px; /* Ensure consistent height for all cards */
+  height: 150px; /* Set explicit height */
+  background-color: #dcecff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center; /* Center-align the content */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.clinic-card:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  background-color: #b9cffe;
+}
+
+.clinic-name {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Sarabun', sans-serif;
+  word-wrap: break-word; /* Ensure long names wrap within the card */
+}
+
+/* Scrollbar styling */
+.clinic-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.clinic-container::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+.clinic-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Title for the selection section */
+.select-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: 'Sarabun', sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .clinic-container {
+    grid-template-columns: repeat(6, 1fr); /* 3 cards per row */
+    gap: 15px;
+    padding: 30px;
+    max-height: 340px;
+    padding-bottom: 100px;
+  }
+  
+  .clinic-card {
+    height: 200px; /* Adjust card height for smaller screens */
+  }
+  
+  .clinic-name {
+    font-size: 20px; /* Smaller font for smaller screens */
+    padding: 5px;
+  }
+
+  .select-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .clinic-container {
+    grid-template-columns: repeat(5, 1fr); /* 3 cards per row */
+    gap: 15px;
+    padding: 15px;
+    max-height: 300px;
+    padding-bottom: 100px;
+  }
+  
+  .clinic-card {
+    height: 130px; /* Adjust card height for smaller screens */
+  }
+  
+  .clinic-name {
+    font-size: 16px; /* Smaller font for smaller screens */
+    padding: 5px;
+  }
+
+  .select-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+
+/* Media Query for screens up to 480px */
+@media (max-width: 480px) {
+  .clinic-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 10px;
+    padding: 10px;
+    max-height: 380px;
+    padding-bottom: 100px;
+  }
+  
+  .clinic-card {
+    height: 110px; /* Adjust card height for smaller screens */
+    min-height: 110px; /* Ensure all cards are uniform */
+  }
+  
+  .clinic-name {
+    font-size: 15px; /* Smaller font for smaller screens */
+    padding: 5px;
+  }
+
+  .select-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+}

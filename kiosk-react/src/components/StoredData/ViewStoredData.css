@@ -1,0 +1,17 @@
+.view-stored-data-container {
+    padding: 20px;
+  }
+  
+  .view-stored-data-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .view-stored-data-container pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    overflow: auto;
+  }
+  

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* General container styling */
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Card styling */
+.transfer-card, .selfpay-card {
+  display: flex; /* Flex layout to align image and text side by side */
+  align-items: center; /* Center image and text vertically */
+  gap: 20px; /* Space between image and text */
+  width: 250px; /* Adjust card width */
+  height: 130px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Sarabun';
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 20px;
+  background-color: #dcecff;
+  color: #1D1F71;
+}
+
+.transfer-card:hover, .selfpay-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.425);
+  background-color: #b9cffe;
+}
+
+/* Image styling */
+.tofcard-image, .transfer-image, .selfpay-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Content styling */
+.transfer-content, .selfpay-content {
+  flex: 1; /* Allow text to take up remaining space */
+  display: flex;
+  flex-direction: column; /* Arrange text vertically */
+  justify-content: center; /* Center text vertically relative to the image */
+  text-align: left; /* Align text to the left */
+}
+
+.transfer-content h2, .selfpay-content h2 {
+  font-size: 20px;
+  color: #333333;
+  margin: 5px 0; /* Add some spacing between lines */
+}
+
+@media (min-width: 1025px) {
+  .payment-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    justify-items: center;
+    margin-top: 20px;
+
+  }
+
+  .transfer-card, .selfpay-card {
+    display: flex;
+    flex-direction: column; /* Arrange image above text */
+    align-items: center; /* Center image and text */
+    gap: 10px; /* Space between image and text */
+    width: 500px; /* Adjust card width */
+    height: 250px; /* Adjust height */
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .transfer-image, .selfpay-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .transfer-content, .selfpay-content {
+    display: flex;
+    flex-direction: column; /* Arrange text vertically */
+    justify-content: center;
+    text-align: center; /* Align text to the center */
+    flex: 1;
+  }
+
+  .transfer-content h2, .selfpay-content h2 {
+    font-size: 22px;
+    color: #333333;
+    margin: 5px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .payment-container {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .transfer-card, .selfpay-card {
+    gap: 5px;
+    width: 280px;
+    height: 130px;
+    padding: 10px;
+  }
+
+  .transfer-image, .selfpay-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .transfer-content, .selfpay-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .transfer-content h2, .selfpay-content h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+}

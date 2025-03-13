@@ -1,0 +1,195 @@
+/* Step.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.steps3-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  position: relative;
+}
+
+.step3-box {
+  background-color: #1D1F71;
+  color: #fff;
+  width: 72px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  z-index: 4;
+}
+
+.step3-box:nth-child(2) {
+  background-color: #1D1F71;
+  margin-left: 20px;
+  z-index: 3;
+}
+
+.step3-box:nth-child(3) {
+  background-color: #DB0007;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.step3-box:nth-child(4) {
+  background-color: #1D1F71;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+/* Align the number and text vertically */
+.step3-content {
+  display: flex;
+  flex-direction: column; /* Stack number and text vertically */
+  align-items: center;    /* Center-align both elements */
+}
+
+/* Style the number part of the step */
+.step3-number {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Sarabun';
+
+}
+
+/* Style the text part of the step */
+.step3-text {
+  font-size: 13px;
+  margin-top: 5px; /* Add some spacing below the number */
+  font-family: 'Sarabun';
+}
+
+/* Create arrows between the boxes */
+.step3-box:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  z-index: 5;
+}
+
+.step3-box:nth-child(1)::after {
+  border-color: transparent transparent transparent #1D1F71;
+}
+
+.step3-box:nth-child(2)::after {
+  border-color: transparent transparent transparent #1D1F71;
+}
+
+.step3-box:nth-child(3)::after {
+  border-color: transparent transparent transparent #DB0007;
+}
+
+@media (min-width: 1025px) { 
+  .steps3-container {
+    margin-top: 5px;
+  }
+  
+  .step3-box {
+    width: 170px;
+    height: 80px;
+    z-index: 4;
+    margin-right: 60px;
+  }
+  
+  /* Style the number part of the step */
+  .step3-number {
+    font-size: 18px;
+  }
+  
+  /* Style the text part of the step */
+  .step3-text {
+    font-size: 18px;
+    margin-top: 5px; /* Add some spacing below the number */
+  }
+
+  .step3-box:not(:last-child)::after {
+    right: -80px;
+    transform: translateY(-50%);
+    border-width: 25px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .steps3-container {
+    margin-top: -35px;
+  }
+  
+  .step3-box {
+    width: 120px;
+    height: 80px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 4;
+  }
+  
+  /* Style the number part of the step */
+  .step3-number {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Style the text part of the step */
+  .step3-text {
+    font-size: 16px;
+    margin-top: 5px; /* Add some spacing below the number */
+  }
+}
+
+/* Extra small screens: Further reduce text size */
+@media (max-width: 480px) {
+  .steps3-container {
+    margin-top: -53px;
+  }
+  .step3-box {
+    width: 60px;
+    height: 80px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 4;
+  }
+  
+  .step3-box:nth-child(2) {
+    margin-left: 20px;
+    z-index: 3;
+  }
+  
+  .step3-box:nth-child(3) {
+    margin-left: 20px;
+    z-index: 2;
+  }
+  
+  .step3-box:nth-child(4) {
+    margin-left: 20px;
+    z-index: 1;
+  }
+  
+  /* Style the number part of the step */
+  .step3-number {
+    font-size: 14px;
+  }
+  
+  /* Style the text part of the step */
+  .step3-text {
+    font-size: 11px;
+    margin-top: 5px; /* Add some spacing below the number */
+  }
+  
+  /* Create arrows between the boxes */
+  .step3-box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    z-index: 5;
+  }
+}

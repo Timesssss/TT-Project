@@ -1,0 +1,131 @@
+/* ThaiForeigner.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* Container for the cards */
+.thai-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensure cards stack on smaller screens */
+  padding: 20px;
+}
+
+/* Shared card style */
+.torfcard {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  gap: 15px; /* Space between image and text */
+  width: 350px;
+  height: 150px;
+  background-color: #dcecff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.torfcard:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.425);
+  background-color: #b9cffe;
+}
+
+/* Image inside the card */
+.tofcard-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 15px; /* Add space on the left */
+}
+
+/* Text content inside the card */
+.torfcard-content {
+  flex: 1; /* Expand text area to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the text */
+  text-align: left; /* Align text to the left */
+  padding-right: 15px; /* Add padding on the right */
+}
+
+/* Style for the text */
+.torfcard-content h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Adjust font size */
+  font-family: 'Sarabun', sans-serif; /* Use Sarabun font */
+  color: #1d1f71; /* Text color */
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 1025px) {
+  .torfcard {
+    width: 400px;
+    height: 180px;
+    margin-top: 40px;
+  }
+
+  .tofcard-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .torfcard-content h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .torfcard {
+    width: 300px;
+    height: 180px;
+    margin-top: 10px;
+  }
+
+  .tofcard-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .torfcard-content h2 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .torfcard {
+    width: 300px;
+    height: 140px;
+    margin-top: 10px;
+  }
+
+  .tofcard-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .torfcard-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .torfcard {
+    width: 260px;
+    height: 130px;
+    gap: 10px;
+  }
+
+  .tofcard-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .torfcard-content h2 {
+    font-size: 26px;
+  }
+}

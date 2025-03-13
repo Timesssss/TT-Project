@@ -1,0 +1,303 @@
+/* Footer2.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.footer2 {
+    background-image: url('../images/footer.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer2-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer2-left .back-button {
+    background-color: white;
+    color: #003366;
+    border: none;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Sarabun';
+}
+
+.footer2-left .back-button:hover {
+    background-color: #003366;
+    color: white;
+}
+
+.footer2-right {
+    position: relative; /* Allows absolute positioning of the button */
+    right: -270px;
+    bottom: -15px;
+}
+
+.footer2-right button {
+    background-color: white;
+    color: #003366; /* Deep blue */
+    border: none;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute; /* Moves button independently */
+    margin-right: 10px;
+    font-family: 'Sarabun';
+}
+
+.footer2-right button.active {
+    background-color: #003366; /* Deep blue */
+    color: white;
+}
+
+@media (min-width: 1025px) {
+    .footer2 {
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer2-content {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer2-left {
+        font-size: 14px;
+        position: absolute; /* Allows independent positioning */
+        bottom: -30px; /* Aligns version text near the bottom */
+        left: 10px; /* Aligns version text to the left */
+        font-family: 'Sarabun';
+    }
+
+    .footer2-left .back-button {
+        font-size: 16px;
+        font-weight: normal;
+        background-color: #003366;
+        color: white;
+    }
+
+    .footer2-left .back-button:hover {
+        background-color: white;
+        color: #003366;
+    }
+    
+    .footer2-right {
+        position: absolute; /* Allows absolute positioning of the button */
+        right: 60px;
+        bottom: 5px;
+    }
+    
+    .footer2-right button {
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .footer2 {
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer2-content {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer2-left {
+        font-size: 14px;
+        position: absolute; /* Allows independent positioning */
+        bottom: -30px; /* Aligns version text near the bottom */
+        left: 10px; /* Aligns version text to the left */
+        font-family: 'Sarabun';
+    }
+
+    .footer2-left .back-button {
+        font-size: 16px;
+        font-weight: normal;
+        background-color: #003366;
+        color: white;
+    }
+
+    .footer2-left .back-button:hover {
+        background-color: white;
+        color: #003366;
+    }
+    
+    .footer2-right {
+        position: absolute; /* Allows absolute positioning of the button */
+        right: 60px;
+        bottom: 5px;
+    }
+    
+    .footer2-right button {
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer2 {
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer2-content {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer2-left {
+        font-size: 14px;
+        position: absolute; /* Allows independent positioning */
+        bottom: -30px; /* Aligns version text near the bottom */
+        left: 10px; /* Aligns version text to the left */
+        font-family: 'Sarabun';
+    }
+
+    .footer2-left .back-button {
+        font-size: 16px;
+        font-weight: normal;
+        background-color: #003366;
+        color: white;
+    }
+
+    .footer2-left .back-button:hover {
+        background-color: white;
+        color: #003366;
+    }
+    
+    .footer2-right {
+        position: absolute; /* Allows absolute positioning of the button */
+        right: 60px;
+        bottom: 5px;
+    }
+    
+    .footer2-right button {
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer2 {
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: center;
+        padding: 40px 0;
+        color: white;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer2-content {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer2-left {
+        font-size: 12px;
+        color: white;
+        position: absolute; /* Allows independent positioning */
+        bottom: -30px; /* Aligns version text near the bottom */
+        left: 10px; /* Aligns version text to the left */
+        font-family: 'Sarabun';
+    }
+    
+    .footer2-right {
+        position: absolute; /* Allows absolute positioning of the button */
+        right: 60px;
+        bottom: 5px;
+    }
+    
+    .footer2-right button {
+        background-color: white;
+        color: #003366; /* Deep blue */
+        border: none;
+        padding: 7px 10px;
+        font-size: 12px;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute; /* Moves button independently */
+        font-family: 'Sarabun';
+    }
+    
+    .footer2-right button.active {
+        background-color: #003366; /* Deep blue */
+        color: white;
+    }
+}

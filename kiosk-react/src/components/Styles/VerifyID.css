@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* General Styling */
+
+.idcard-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+/* ID Card Styling */
+.id-card {
+    width: 100%;
+    background-color: #d9f0ff;
+    border: 1px solid #8a8a8a;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.id-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+.idcardHeader {
+    width: 30px;
+    height: auto;
+    margin-left: -4px;
+    margin-top: -5px;
+}
+
+.idcard-title {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Sarabun;
+    color: #0056b3;
+    text-align: center;
+    flex: 1;
+}
+
+.idcard-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.idcard-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.idcard-right {
+    margin-left: -45px;
+    width: 60%;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 100px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    margin-top: 20px;
+    align-self: flex-end;
+    margin-right: -10px;
+}
+
+.idcard-right p {
+    margin: 5px 0;
+    word-wrap: break-word;
+    font-family: Sarabun;
+}
+
+/* Phone Number and Number Keypad Layout */
+.phone-keypad-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.phone-number-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-number-container label{
+    font-family: Sarabun;
+}
+
+.phone-number-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Sarabun;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: Sarabun;
+}
+
+.number-keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+    justify-items: center;
+    width: auto; /* Adjust width to fit content */
+}
+
+.number-keypad .key {
+    padding: 20px;
+    font-size: 18px;
+    font-family: Sarabun;
+    border: none;
+    background-color: #1D1F71;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.number-keypad .key:hover {
+    background-color: #1D1F71;
+}
+
+.delete-confirm-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    width: auto; /* Adjust width to fit content */
+        font-family: Sarabun;
+}
+
+.delete-confirm-buttons button {
+    width: 100%; /* Full width of the container */
+    background-color: #f44336;
+    font-size: 16px;
+    height: 60px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-confirm-buttons .confirm {
+    background-color: #3b8b3e;
+    color: white;
+    font-family: Sarabun;
+}
+
+.delete-confirm-buttons .delete {
+    background-color: #d32f2f;
+    color: white;
+    font-family: Sarabun;
+}
+
+@media (min-width: 1025px) {
+    .idcard-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .card-info {
+        width: 50%; /* Adjust width as needed */
+        margin-left: -200px; /* Add some spacing */
+        margin-top: 2px;
+    }
+
+    /* ID Card Styling */
+    .id-card {
+        width: 150%;
+        background-color: #d9f0ff;
+        border: 1px solid #8a8a8a;
+        padding: 20px;
+        border-radius: 8px;
+        color: #333;
+        font-size: 14px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+        max-height: 195px; /* Set maximum height */
+
+    }
+    
+
+.id-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.idcardHeader {
+    width: 50px;
+    height: auto;
+    margin-left: -2px;
+    margin-top: -10px;
+}
+
+.idcard-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0056b3;
+    margin-top: -10px;
+}
+
+.idcard-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.idcard-right {
+    margin-left: -9px;
+    width: 90%;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 70px;
+    margin-bottom: -5px;
+    align-self: flex-end;
+    margin-right: -5px;
+}
+
+.idcard-right p {
+    margin: 8px 0;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+
+/* Phone Number and Number Keypad Layout */
+.phone-keypad-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 170px;
+    gap: 20px;
+}
+
+.phone-number-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-number-container label{
+    margin-top: 35px;
+    margin-left: -500px;
+    font-family: 'Sarabun';
+    font-size: 15px;
+}
+
+.phone-number-container input {
+    padding: 10px;
+    font-size: 15px;
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.error-message {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.number-keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+    justify-items: center;
+    width: 40%; /* Adjust width to fit content */
+    margin-left: -20px;
+    margin-top: -150px;
+    
+}
+
+.number-keypad .key {
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.number-keypad .blank {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.delete-confirm-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    width: 300px; /* Adjust width to fit content */
+    margin-left: -400px;
+}
+
+.delete-confirm-buttons button {
+    width: 100%; /* Full width of the container */
+    font-size: 18px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+button.delete, button.confirm {
+    width: 150px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+button.delete:hover, button.confirm:hover {
+    opacity: 0.9;
+}        
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .id-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: -70px;
+    }
+
+    .id-card {
+        height: 150px;
+        width: 290px;
+        margin-left: 15px;
+    }
+  
+    .id-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -15px;
+      width: 100%;
+      font-family: Sarabun;
+    }
+    
+    .idcardHeader {
+      width: 30px;
+      height: auto;
+      margin-left: -13px;
+      margin-top: 2px;
+    }
+    
+    .idcard-title {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      flex: 1;
+    }
+    
+    .idcard-left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -30px;
+    }
+    
+    .idcard-right {
+      margin-left: -10px;
+      width: 85%;
+    }
+    
+    .profile-picture {
+      width: 65px;
+      height: 75px;
+      object-fit: cover;
+      margin-top: 30px;
+      align-self: flex-end;
+      margin-right: -15px;
+      margin-bottom: 10px;
+    }
+    
+    .idcard-right p {
+      margin: 6px 0;
+      word-wrap: break-word;
+      font-size: 13px;
+    }
+    
+    /* Phone Number and Number Keypad Layout */
+    .phone-keypad-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -13px;
+        gap: 20px;
+    }
+
+    .phone-number-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-number-container label{
+        margin-top: 30px;
+        margin-left: -90px;
+        font-family: 'Sarabun';
+        font-size: 16px;
+    }
+
+    .phone-number-container input {
+        padding: 10px;
+        font-size: 16px;
+        width: 90%;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .error-message {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .number-keypad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 1px;
+        justify-items: center;
+        width: 40%; /* Adjust width to fit content */
+        margin-left: 50px;
+        margin-top: -100px;
+        
+    }
+
+    .number-keypad .key {
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .number-keypad .blank {
+        background-color: transparent;
+        border: none;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .delete-confirm-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-start;
+        width: 250px; /* Adjust width to fit content */
+        margin-left: 50px;
+    }
+
+    .delete-confirm-buttons button {
+        width: 100%; /* Full width of the container */
+        font-size: 18px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+    
+    button.delete, button.confirm {
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    
+    button.delete:hover, button.confirm:hover {
+        opacity: 0.9;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .id-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: -70px;
+    }
+
+    .id-card {
+        height: 150px;
+        width: 290px;
+        margin-left: 15px;
+    }
+  
+    .id-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -15px;
+      width: 100%;
+      font-family: Sarabun;
+    }
+    
+    .idcardHeader {
+      width: 30px;
+      height: auto;
+      margin-left: -13px;
+      margin-top: 2px;
+    }
+    
+    .idcard-title {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      flex: 1;
+    }
+    
+    .idcard-left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -30px;
+    }
+    
+    .idcard-right {
+      margin-left: -10px;
+      width: 85%;
+    }
+    
+    .profile-picture {
+      width: 65px;
+      height: 75px;
+      object-fit: cover;
+      margin-top: 30px;
+      align-self: flex-end;
+      margin-right: -15px;
+      margin-bottom: 10px;
+    }
+    
+    .idcard-right p {
+      margin: 6px 0;
+      word-wrap: break-word;
+      font-size: 13px;
+    }
+    
+    /* Phone Number and Number Keypad Layout */
+    .phone-keypad-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -13px;
+        gap: 20px;
+    }
+
+    .phone-number-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-number-container label{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-family: 'Sarabun';
+        font-size: 14px;
+    }
+
+    .phone-number-container input {
+        padding: 10px;
+        font-size: 16px;
+        width: 90%;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .error-message {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .number-keypad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 1px;
+        justify-items: center;
+        width: 40%; /* Adjust width to fit content */
+        margin-left: -10px;
+        margin-top: 20px;
+        
+    }
+
+    .number-keypad .key {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+    }
+
+    .number-keypad .blank {
+        background-color: transparent;
+        border: none;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .delete-confirm-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
+        width: 180px; /* Adjust width to fit content */
+        margin-left: 20px;
+    }
+
+    .delete-confirm-buttons button {
+        width: 100%; /* Full width of the container */
+        font-size: 16px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+    
+    button.delete, button.confirm {
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    
+    button.delete:hover, button.confirm:hover {
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 480px) {
+    .id-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: -70px;
+    }
+
+    .id-card {
+        height: 150px;
+        width: 290px;
+        margin-left: 15px;
+    }
+  
+    .id-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -15px;
+      width: 100%;
+      font-family: Sarabun;
+    }
+    
+    .idcardHeader {
+      width: 30px;
+      height: auto;
+      margin-left: -13px;
+      margin-top: 2px;
+    }
+    
+    .idcard-title {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      flex: 1;
+    }
+    
+    .idcard-left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -30px;
+    }
+    
+    .idcard-right {
+      margin-left: -10px;
+      width: 85%;
+    }
+    
+    .profile-picture {
+      width: 65px;
+      height: 75px;
+      object-fit: cover;
+      margin-top: 30px;
+      align-self: flex-end;
+      margin-right: -15px;
+      margin-bottom: 10px;
+    }
+    
+    .idcard-right p {
+      margin: 6px 0;
+      word-wrap: break-word;
+      font-size: 13px;
+    }
+    
+    /* Phone Number and Number Keypad Layout */
+    .phone-keypad-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -13px;
+        gap: 20px;
+    }
+
+    .phone-number-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-number-container label{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-family: 'Sarabun';
+        font-size: 14px;
+    }
+
+    .phone-number-container input {
+        padding: 10px;
+        font-size: 16px;
+        width: 90%;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .error-message {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .number-keypad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 1px;
+        justify-items: center;
+        width: 100%; /* Adjust width to fit content */
+        margin-left: -10px;
+        margin-top: 40px;
+        
+    }
+
+    .number-keypad .key {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .number-keypad .blank {
+        background-color: transparent;
+        border: none;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .delete-confirm-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
+        width: 180px; /* Adjust width to fit content */
+        margin-left: 20px;
+    }
+
+    .delete-confirm-buttons button {
+        width: 100%; /* Full width of the container */
+        font-size: 16px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+    
+    button.delete, button.confirm {
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    
+    button.delete:hover, button.confirm:hover {
+        opacity: 0.9;
+    }
+}

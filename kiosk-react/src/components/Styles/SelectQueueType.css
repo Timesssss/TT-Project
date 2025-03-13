@@ -1,0 +1,252 @@
+/* SelectQueueType.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.queue-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.queue-card {
+  background-color: #dcecff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.queue-card:hover {
+  transform: translateY(-5px);
+  transform: scale(1.10);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.425);
+  background-color: #b9cffe;
+}
+
+.queue-card-content-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.queue-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.queue-title {
+  font-size: 1.5em;
+  color: #1D1F71;
+  margin-bottom: 5px;
+  font-family: Sarabun;
+}
+
+.queue-description {
+  font-size: 1em;
+  color: #666666;
+  font-family: Sarabun;
+}
+
+.select-queue-heading {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+  font-family: Sarabun;
+}
+
+@media (min-width: 1025px) {
+  .queue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .select-queue-heading {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: -5px;
+  }
+
+  .queue-card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    margin-left: 20px;
+  }
+
+  .queue-card-content-horizontal {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Add spacing between image and text */
+  }
+
+  .queue-title {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  .queue-description {
+    font-size: 18px;
+  }
+
+  .queue-image {
+    width: 150px;
+    height: 110px;
+    margin: 0px;
+  }
+  
+  .select-queue-container {
+    padding: 20px;
+  }  
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .queue-container {
+    gap: 20px;
+    padding: 20px;
+    margin-top: -15px;
+  }
+
+  .select-queue-heading {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .queue-card {
+    width: 300px;
+    height: 110px;
+    text-align: center;
+  }
+
+  .queue-title {
+    font-size: 18px;
+  }
+
+  .queue-description {
+    font-size: 14px; 
+  }
+
+  .queue-card-content-horizontal > div {
+  flex: 1; /* Distribute the remaining space evenly */
+  max-width: calc(100% - 80px); /* Adjust based on icon size */
+}
+
+
+  .queue-image {
+    width: 70px;
+    height: 70px;
+    margin: -5px;
+  }
+  
+  
+  .select-queue-container {
+    align-items: center;
+  }  
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .queue-container {
+    gap: 10px;
+    padding: 10px;
+    margin-top: -15px;
+  }
+
+  .select-queue-heading {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .queue-card {
+    width: 210px;
+    height: 110px;
+    text-align: center;
+  }
+
+  .queue-title {
+    font-size: 14px;
+  }
+
+  .queue-description {
+    font-size: 12px; 
+  }
+
+  .queue-card-content-horizontal > div {
+  flex: 1; /* Distribute the remaining space evenly */
+  max-width: calc(100% - 80px); /* Adjust based on icon size */
+}
+
+
+  .queue-image {
+    width: 60px;
+    height: 60px;
+    margin: -5px;
+  }
+  
+  
+  .select-queue-container {
+    align-items: center;
+  }  
+}
+
+
+
+@media (max-width: 480px) {
+  .queue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -15px;
+  }
+
+  .select-queue-heading {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: -10px;
+  }
+
+  .queue-card {
+    width: 250px;
+    height: 100px;
+  }
+
+  .queue-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .queue-description {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .queue-image {
+    width: 70px;
+    height: 70px;
+    margin: -10px;
+  }
+  
+  .select-queue-container {
+    padding: 20px;
+  }  
+}

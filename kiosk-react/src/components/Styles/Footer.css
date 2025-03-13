@@ -1,0 +1,289 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.footer {
+    background-image: url('../images/footer.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    font-size: 12px;
+    color: white;
+    position: absolute; /* Allows independent positioning */
+    bottom: 10px; /* Aligns version text near the bottom */
+    left: 10px; /* Aligns version text to the left */
+    font-family: 'Sarabun';
+}
+
+.footer-right {
+    position: relative; /* Allows absolute positioning of the button */
+    right: -270px;
+    bottom: -15px;
+}
+
+.footer-right button {
+    background-color: white;
+    color: #003366; /* Deep blue */
+    border: none;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute; /* Moves button independently */
+    margin-right: 10px;
+    font-family: 'Sarabun';
+}
+
+.footer-right .manual-button {
+    background-color: white;
+    color: #003366;
+    border: none;
+    padding: 7px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
+    font-family: 'Sarabun';
+}
+
+.footer-right button.active {
+    background-color: #003366; /* Deep blue */
+    color: white;
+}
+
+@media (min-width: 1025px) {
+    .footer {
+        padding-bottom: 40px;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer-content {
+        margin: 0 930px;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        font-size: 14px;
+        bottom: 10px; /* Aligns version text near the bottom */
+        left: 20px; /* Aligns version text to the left */
+        color: #003366;
+    }
+    
+    .footer-right {
+        position: absolute;
+        right: 5px; 
+        bottom: 50px;
+    }
+    
+    .footer-right button {
+        background-color: white;
+        color: #003366; /* Deep blue */
+        border: none;
+        padding: 7px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: -80px; /* Adjust spacing between buttons */
+    }
+    
+    .footer-right .manual-button {
+        background-color: white;
+        color: #003366;
+        border: none;
+        padding: 7px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-left: -160px;
+    }
+
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .footer {
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        padding: 70px 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer-content {
+        margin: 0 400px;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        position: absolute;
+        font-size: 16px;
+        bottom: 10px; /* Aligns version text near the bottom */
+        left: 70px; /* Aligns version text to the left */
+    }
+    
+    .footer-right {
+        position: absolute; /* Keep it absolute */
+        right: 0; /* Stick it to the right edge of the footer */
+        bottom: 60px; /* Adjust vertical alignment if necessary */
+    }
+    
+    .footer-right button {
+        background-color: white;
+        color: #003366; /* Deep blue */
+        border: none;
+        padding: 7px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: -80px; /* Adjust spacing between buttons */
+    }
+    
+    .footer-right .manual-button {
+        background-color: white;
+        color: #003366;
+        border: none;
+        padding: 7px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-left: -160px;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        padding: 60px 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        font-size: 14px;
+        position: absolute;
+        bottom: 10px; /* Aligns version text near the bottom */
+        left: 30px; /* Aligns version text to the left */
+    }
+    
+    .footer-right {
+        position: absolute;
+        right: 80px;
+        bottom: 50px;
+    }
+    
+    .footer-right button {
+        padding: 7px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-right: -10px;
+    }
+
+    .footer-right .manual-button {
+        padding: 7px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-left: -80px;
+        font-family: 'Sarabun';
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: center;
+        padding: 60px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        font-size: 12px;
+        color: white;
+        position: absolute; /* Allows independent positioning */
+        bottom: 10px; /* Aligns version text near the bottom */
+        left: 10px; /* Aligns version text to the left */
+        font-family: 'Sarabun';
+    }
+    
+    .footer-right {
+        position: absolute; /* Allows absolute positioning of the button */
+        right: 70px;
+        bottom: 40px;
+    }
+    
+    .footer-right button {
+        background-color: white;
+        color: #003366; /* Deep blue */
+        border: none;
+        padding: 7px 10px;
+        font-size: 13px;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute; /* Moves button independently */
+        font-family: 'Sarabun';
+    }
+    
+    .footer-right button.active {
+        background-color: #003366; /* Deep blue */
+        color: white;
+    }
+
+    .footer-right .manual-button {
+        background-color: white;
+        color: #003366;
+        border: none;
+        padding: 7px 10px;
+        font-size: 13px;
+        margin-left: -80px;
+        font-family: 'Sarabun';
+    }
+}
